@@ -12,6 +12,7 @@ window.onload = function() {
     animOrder(document.getElementById("piece8"), 'piece8FirstAnim');
     animOrder(document.getElementById("piece9"), 'piece9FirstAnim');
     animOrder(document.getElementById("piece10"), 'piece10FirstAnim');
+    animOrder(document.getElementById("piece11"), 'piece11FirstAnim');
 
     function animOrder(piece, firstAnimClass) {
 
