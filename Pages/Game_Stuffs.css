@@ -153,7 +153,7 @@ body {
  } 
  .piece11FirstAnim {
  
-   animation: BounceDown 1s 1400ms ;
+   animation: BounceDown 1s 1550ms ;
    animation-fill-mode: both ;
  }
 @keyframes BounceDown {
