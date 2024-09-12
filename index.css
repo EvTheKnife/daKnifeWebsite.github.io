@@ -4,6 +4,16 @@ body {
 }
 
 
+#AllOfTitleIMG {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2%;
+    scale: 0.8;
+}
 
 .welcomeIMG {
     
@@ -123,7 +133,7 @@ body {
 }
 @keyframes BounceRight {
     0% {transform: translateX(0px);}
-    100% {transform: translateX(calc(30vw + 400px));}
+    100% {transform: translateX(calc(15vw + 400px));}
     
 }
 
@@ -140,6 +150,8 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+    scale: 0.9;
+    padding-top: 2%;
   }
 
 .img-buttons  {
@@ -147,6 +159,12 @@ body {
     height: 40vh;
     position: relative;
     z-index: 1;
+
+    transition: all 0.8s ease;
+}
+
+.img-buttons:hover {
+    scale: 1.1;
 }
 .flex-item {
     display: block;
@@ -209,10 +227,11 @@ body {
 #portfolio-words {
     display: block;
     position: absolute;
-    left: -25%;
+    left: -35%;
     top: 40%;
     animation: FadeIn 1s 150ms;
     animation-fill-mode: both;
+    scale: 0.5;
 }
 
 .bounce-right-1 {
