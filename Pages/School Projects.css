@@ -203,3 +203,33 @@ body {
    100% {transform: translateY(0px);}
 
 }
+
+
+body {
+   background-color: #080309;
+}
+
+.mouse-cursor-gradient-tracking span * {
+   position: relative;
+ }
+
+ .mouse-cursor-gradient-tracking::before {
+   --size: 0;
+   --color: #4b0e4d;
+   content: "";
+   position: absolute;
+   left: var(--x);
+   top: var(--y);
+   width: 100vw;
+   height: 100vh;
+   background: radial-gradient(circle closest-side, var(--color), transparent);
+   transform: translate(-50%, -50%);
+   transition:
+   width 0.2s ease,
+   height 0.2s ease;
+ }
+
+
+ .mouse-cursor-gradient-tracking:hover::before {
+   --size: 300px;
+ }
