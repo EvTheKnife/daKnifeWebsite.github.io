@@ -9,18 +9,38 @@
     <script src='index.js'></script>
 </head>
 <body>
-    <h1>WELCOME TO THE PARTY</h1> <button onclick="play()">Play Circus Music</button>
-    <br>
-    <h3 id="TTT"><a href="/Former CS Project/TicTacToe.html">Play Tic-Tac-Toe!</a></h4>
-    <br>
-    <h3 id="DNB"><a href="/Former CS Project/DotsnBoxes.html">Play Dots & Boxes!</a></h4>
-    <br>
-    <h3 id="HM"><a href="/Former CS Project/hangman.html">Play Hangman!</a></h4>
-    
-    <audio id="circusMusic">
-        <source src="/Former CS Project/sounds/HwEMvbqUH0.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
+    <div id="AllOfWelcomeIMG">
+        <div class="welcomeIMG piece1FirstAnim" id="piece1"></div>
+        <div class="welcomeIMG piece2FirstAnim" id="piece2"></div>
+        <div class="welcomeIMG piece3FirstAnim" id="piece3"></div>
+        <div class="welcomeIMG piece4FirstAnim" id="piece4"></div>
+        <div class="welcomeIMG piece5FirstAnim" id="piece5"></div>
+        <div class="welcomeIMG piece6FirstAnim" id="piece6"></div>
+        <div class="welcomeIMG piece7FirstAnim" id="piece7"></div>
+    </div>  
 
+    <div class="flex-container">
+        <div class="flex-item" id="left">
+            <a href="Pages/CS_Projects.html"><img class="img-buttons" id="my-cs-projects" src="Assets/hackermans.jpg">
+            <img class="background bounce-left-1" src="Assets/My CS Projects.png"> </a>
+
+
+        </div>
+        <div class="flex-item" id="right">            
+            <a href="Pages/Portfolio.html"><img class="img-buttons" id="portfolio" src="Assets/bisnesman.png">
+            <img class="background" id="portfolio-words" src="Assets/Portfolio.png"> </a>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item" id="left">
+            <a href="Pages/Game_Stuffs.html"><img class="img-buttons" id="game-stuff" src="Assets/Gamer.png"> 
+            <img class="background bounce-left-3" src="Assets/Game Stuff.png"> </a>
+
+        </div>
+        <div class="flex-item" id="right">
+            <a href="Pages/About_Me.html"><img class="img-buttons" id="about-me" src="Assets/squints.jpg">
+            <img class="background bounce-right-1" src="Assets/About Me.png"> </a>
+        </div>
+    </div>
 </body>
 </html>

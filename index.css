@@ -1,18 +1,23 @@
+
 body {
     background-color: black;
-    margin-inline-start: 0%;
 }
 
-#AllOfWelcomeIMG {
-    
-}
+
 
 .welcomeIMG {
+    
     background-image:url(Assets/Welcome.png);
-    display: inline-block;
-    width:305px;
-    height: 269px;   
+    width:104px;
+    height: 92px;   
     float: left;
+ 
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
  }
 
 
@@ -39,89 +44,179 @@ body {
 
  .piece1FirstAnim { 
 
-    animation: BounceIn 1s 50ms ;
+    animation: BounceDown 1s 50ms ;
     animation-fill-mode: both ;
  }
 
  #piece2 {
-    background-position:-305px;
+    background-position:-104px;
 
 
  }
  .piece2FirstAnim {
 
-    animation: BounceIn 1s 250ms ;
+    animation: BounceDown 1s 250ms ;
     animation-fill-mode: both ;
  }
  #piece3 {
-    background-position:-610px;
+    background-position:-208px;
 
 
  } 
  .piece3FirstAnim {
 
-    animation: BounceIn 1s 550ms ;
+    animation: BounceDown 1s 450ms ;
     animation-fill-mode: both ;
  }
  #piece4 {
-    background-position:-915px;
+    background-position:-312px;
 
 
  }
  .piece4FirstAnim {
 
-    animation: BounceIn 1s 750ms ;
+    animation: BounceDown 1s 650ms ;
     animation-fill-mode: both ;
  }
  #piece5 {
-    background-position:-1220px;
+    background-position:-415px;
     
 }
 .piece5FirstAnim {
 
-    animation: BounceIn 1s 950ms ;
+    animation: BounceDown 1s 850ms ;
     animation-fill-mode: both ;
 }
  #piece6 {
-    background-position:-1525px;
+    background-position:-518px;
     
 
  }
  .piece6FirstAnim {
 
-    animation: BounceIn 1s 1150ms ;
+    animation: BounceDown 1s 1050ms ;
     animation-fill-mode: both ;
  }
  #piece7 {
-    background-position:-1829px;
+    background-position:-621px;
 
 
  }
  .piece7FirstAnim {
 
-    animation: BounceIn 1s 1350ms ;
+    animation: BounceDown 1s 1250ms ;
     animation-fill-mode: both ;
  }
 
 
- @keyframes BounceIn {
+ @keyframes BounceDown {
     0% {transform: translateY(-550px);}
     35% {transform: translateY(0px);}
     40% {transform: translateY(10px);}
     100% {transform: translateY(0px);}
 
 }
+@keyframes BounceLeft {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(-550px);}
+    
+}
+@keyframes BounceRight {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(calc(30vw + 400px));}
+    
+}
 
-@keyframes hover {
+@keyframes FadeIn {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
 
-    100% {transform: translateY(20px);}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+.img-buttons  {
+    width: 30vw;
+    height: 40vh;
+    position: relative;
+    z-index: 1;
+}
+.flex-item {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    position: relative;
+
+    margin-top: 7%;
 
 }
-@keyframes reverseHover {
-
-    100% {transform: translateY(0px);}
+.flex-item button {
+    width: 30vw;
+    height: 40vh;
+    
 }
-@keyframes notHover {
-    from {opacity: 100%;}
-    to {opacity: 40%;}
+#left {
+    margin-left: 17%;
+    margin-right: 2%;
+    
+}
+#right {
+    margin-left: 2%;
+    margin-right: 17%;
+    
+}
+
+.background {
+    scale: 0.6;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+
+}
+
+.bounce-left-1 {
+    margin-top: 30%;
+    left: -40px;
+    margin-right: 0;
+    animation: BounceLeft 1s 50ms;
+    animation-fill-mode: both;
+}
+.bounce-left-2 {
+    margin-top: calc(50px + 30%);
+    animation: BounceLeft 1s 50ms;
+    animation-fill-mode: both;
+}
+.bounce-left-3 {
+    margin-top: 30%;
+    left: 25px;
+    margin-right: 0;
+    animation: BounceLeft 1s 50ms;
+    animation-fill-mode: both;
+}
+
+#portfolio-words {
+    display: block;
+    position: absolute;
+    left: -25%;
+    top: 40%;
+    animation: FadeIn 1s 150ms;
+    animation-fill-mode: both;
+}
+
+.bounce-right-1 {
+    margin-top: 37%;
+    animation: BounceRight 1s 50ms;
+    animation-fill-mode: both;
 }
