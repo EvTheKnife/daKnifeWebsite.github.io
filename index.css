@@ -13,6 +13,10 @@ body {
     align-content: center;
     margin-top: 2%;
     scale: 0.8;
+    left: 50%;
+    position: absolute;    
+    transform: translateX(-50%);
+    margin-top: 2%;
 }
 
 .welcomeIMG {
@@ -164,7 +168,7 @@ body {
 }
 
 .img-buttons:hover {
-    scale: 1.1;
+    scale: 1.05;
 }
 .flex-item {
     display: block;
@@ -237,6 +241,11 @@ body {
 
 .bounce-right-1 {
     margin-top: 37%;
+    animation: BounceRight 1s 50ms;
+    animation-fill-mode: both;
+}
+.bounce-right-2 {
+    margin-top: 30%;
     animation: BounceRight 1s 50ms;
     animation-fill-mode: both;
 }

@@ -1,0 +1,156 @@
+
+body {
+    background-color: black;
+}
+
+#AllOfTitleIMG {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2%;
+    scale: 1;
+    
+}
+
+.titleImage {
+    
+    background-image:url('Assets/Game_Stuffs.png');
+    width:104px;
+    height: 92px;   
+
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+ .animFree {
+    transform: translateY(0px);
+    transition: all .8s ease;
+
+}
+.animFree:hover {
+    transform: translateY(20px);
+}
+
+.animFree:not(:hover) {
+    transform: translateY(0px);
+}
+
+#piece1 {
+    background-position:0;
+
+
+ }
+
+.piece1FirstAnim { 
+
+    animation: BounceDown 1s 50ms ;
+    animation-fill-mode: both ;
+}
+
+ #piece2 {
+    background-position:-104px;
+
+
+}
+ .piece2FirstAnim {
+
+    animation: BounceDown 1s 200ms ;
+    animation-fill-mode: both ;
+ }
+ #piece3 {
+    background-position:-208px;
+
+
+ } 
+ .piece3FirstAnim {
+
+    animation: BounceDown 1s 350ms ;
+    animation-fill-mode: both ;
+ }
+ #piece4 {
+    background-position:-312px;
+
+
+ }
+ .piece4FirstAnim {
+
+    animation: BounceDown 1s 500ms ;
+    animation-fill-mode: both ;
+ }
+ #piece5 {
+    background-position:-415px;
+    
+}
+.piece5FirstAnim {
+
+    animation: BounceDown 1s 650ms ;
+    animation-fill-mode: both ;
+}
+ #piece6 {
+    background-position:-518px;
+    
+
+ }
+ .piece6FirstAnim {
+
+    animation: BounceDown 1s 800ms ;
+    animation-fill-mode: both ;
+ }
+ #piece7 {
+    background-position:-621px;
+
+
+ }
+ .piece7FirstAnim {
+
+    animation: BounceDown 1s 950ms ;
+    animation-fill-mode: both ;
+ }
+
+ #piece8 {
+   background-position: -725px;
+
+
+}
+
+.piece8FirstAnim { 
+
+   animation: BounceDown 1s 1100ms ;
+   animation-fill-mode: both ;
+}
+
+#piece9 {
+   background-position:-837px;
+
+
+}
+.piece9FirstAnim {
+
+   animation: BounceDown 1s 1250ms ;
+   animation-fill-mode: both ;
+}
+#piece10 {
+   background-position:-941px;
+
+
+} 
+.piece10FirstAnim {
+
+   animation: BounceDown 1s 1400ms ;
+   animation-fill-mode: both ;
+}
+
+ @keyframes BounceDown {
+    0% {transform: translateY(-550px);}
+    35% {transform: translateY(0px);}
+    40% {transform: translateY(10px);}
+    100% {transform: translateY(0px);}
+
+}
