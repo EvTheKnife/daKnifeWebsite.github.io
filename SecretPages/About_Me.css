@@ -12,7 +12,7 @@
 
 .titleImage {
     
-    /* background-image:url('Assets/About_Me.png'); */
+    background-image:url('Assets/About_Me.png');
     width:104px;
     height: 92px;   
 
@@ -133,6 +133,8 @@
 
 body {
    background-color: #080309;
+   overflow-x: hidden;
+   color: white;
 }
 
 .mouse-cursor-gradient-tracking span * {
@@ -158,9 +160,28 @@ body {
 
  .mouse-cursor-gradient-tracking:hover::before {
    --size: 300px;
+   z-index: -1;
  }
 
 #i-got-a-rock {
    display: block;
-   
+   position: absolute;
+   top: 500px;
+   left:auto;
 }
+
+h2, p, h5{
+   color: rgb(189, 189, 189);
+   z-index: -5;
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+   font-style: italic;
+
+}
+
+p, h5 {
+   text-align: justify;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
