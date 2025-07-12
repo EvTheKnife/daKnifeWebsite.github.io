@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .row > .column {
   padding: 0 8px;
 }
@@ -157,3 +161,7 @@ img.hover-shadow {
     --size: 300px;
   }
 
+
+body {
+    color: white;
+}
