@@ -38,3 +38,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+let gradient = document.querySelector(".mouse-cursor-gradient-tracking");
+    gradient.addEventListener("mousemove", (e) => {
+    let rect = e.target.getBoundingClientRect();
+    let x = e.pageX// - rect.left;
+    let y = e.pageY// - rect.top;
+    gradient.style.setProperty("--x", x + "px");
+    gradient.style.setProperty("--y", y + "px");
