@@ -1,138 +1,133 @@
-#TTT {
-    display: inline-block;
-    margin-top: 7.5%;
-    margin-left: 63%;
-    transform: rotate(10deg);
-}
-#TTT:hover {
-    animation: Rotation_1 2.5s infinite;
+.row > .column {
+  padding: 0 8px;
 }
 
-
-#DNB:hover {
-    animation: Rotation_2 2.5s infinite;
-
-}
-#DNB {
-    display: inline-block;    
-    margin-top: 4.25%;
-    margin-left: 29%;
-    transform: rotate(-15deg);
-
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
-#HM {
-    display: inline-block;
-    margin-top: 10%;
-    margin-left: 50%;
-
-    transform: rotate(3.5deg);
-}
-#HM:hover {
-    animation: Rotation_1 2.5s infinite;
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: center;
+  
+  text-align: center;
 }
 
-h3 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    color: rgb(88, 20, 96);
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: black;
 }
 
-h1 {
-    text-align: center;
-    animation: opacity 2.5s infinite;
-    opacity: 0;
-    color: red;
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 100%;
+  height:70%;
 }
 
-
-a:link {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
-a:visited {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-
-button {
-    position: absolute;
-    top: 5px;
-    right: 0px;
-    animation: opacity 2.5s infinite;
-    opacity: 0;
-    color: red;
-    border: 0;
-    background-color: rgb(0, 0, 0);
+/* Hide the slides by default */
+.mySlides {
+  display: none;
 }
 
-@keyframes Rotation_1 {
-    25% {
-        transform: rotate(-20deg);
-    }
-    50% {
-        transform: rotate(25deg);
-    }
-    70% {
-        transform: rotate(10deg);
-    }
-
-}
-@keyframes Rotation_2 {
-    25% {
-        transform: rotate(20deg);
-    }
-    50% {
-        transform: rotate(-25deg);
-    }
-    70% {
-        transform: rotate(-15deg);
-    }
-
-}
-@keyframes Rotation_3 {
-    25% {
-        transform: rotate(-20deg);
-    }
-    50% {
-        transform: rotate(25deg);
-    }
-    70% {
-        transform: rotate(3.5deg);
-    }
-
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-@keyframes opacity {
-    50% {
-        opacity: 1;
-
-    }
-    100% {
-        opacity: 0;
-        }
-
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: red;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: red;
+}
+
+.thumbNavigation {
+    color: white;
+}
 
 
+.settingsContent {
+    padding: 40px 40px;
+}
+.topSetting {
+    padding-top: 60px;
+}
+img.demo {
+  opacity: 0.6;
+}
 
-body {
-    
-    background-image: url("/Former CS Project/Backgrounds/picmix.com_2551210.gif"); 
-    background-position:center;
-    background-repeat: no-repeat; 
-    background-size: cover;
-        background-color: black;   
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

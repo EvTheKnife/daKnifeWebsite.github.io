@@ -9,18 +9,61 @@
     <script src='index.js'></script>
 </head>
 <body>
-    <h1>WELCOME TO THE PARTY</h1> <button onclick="play()">Play Circus Music</button>
-    <br>
-    <h3 id="TTT"><a href="/Former CS Project/TicTacToe.html">Play Tic-Tac-Toe!</a></h4>
-    <br>
-    <h3 id="DNB"><a href="/Former CS Project/DotsnBoxes.html">Play Dots & Boxes!</a></h4>
-    <br>
-    <h3 id="HM"><a href="/Former CS Project/hangman.html">Play Hangman!</a></h4>
+    <h1>Welcome to Solitare!</h1>
     
-    <audio id="circusMusic">
-        <source src="/Former CS Project/sounds/HwEMvbqUH0.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
+    
+        <!-- Images used to open the lightbox -->
+    <div class="row">
+    <div class="column">
+        <h1 onclick="openModal();currentSlide(1)">Visual Settings</h1>
+    </div>
+    <div class="column">
+        <h1 onclick="openModal();currentSlide(3)">Gameplay Settings</h1>
+    </div>
+    </div>
 
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+        <div class="numbertext">Visual Settings</div>
+            <h2 class="settingsContent topSetting" >Background Color</h2>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">Visual Settings</div>
+            <h2 class="settingsContent topSetting">Card Face</h2>
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">Gameplay Settings</div>
+            <h2 class="settingsContent topSetting">Draw Number</h2>
+        </div>
+    </div>
+
+        
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+
+        <!-- Caption text -->
+        <div class="caption-container">
+        <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+            <h3 onclick="currentSlide(1)" class="thumbNavigation">Visual Settings</h3>
+        </div>
+
+        <div class="column">
+            <h3 onclick="currentSlide(3)" class="thumbNavigation">Gameplay Settings</h3>
+        </div>
+
+       
+    </div>
+    </div>
 </body>
 </html>
